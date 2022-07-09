@@ -1,0 +1,55 @@
+body {
+    background-color: #0c0c0c;
+}
+
+#nav-bar {
+    position: fixed;
+    height: 5%;
+    width: 100vw;
+    background-color: #777777;
+    /* BELOW: Item positions */
+    display: grid;
+    grid-auto-flow: column;
+}
+
+#main-content {
+    margin: auto;
+    padding-top: 10%;
+    width: 85%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.column {
+    margin: 2%;
+    display: grid;
+    grid-auto-flow: row;
+    text-align: center;
+    border-radius: 1vw;
+}
+
+.column div {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.column div div {
+    margin: 5%;
+    height: 15vh;
+    background-color: crimson;
+    border-radius: 1vw;
+    text-align: center;
+}
+
+.column div p {
+    
+}
+
+#left-column {
+    background-color: #333333;
+
+}
+
+#right-column {
+    background-color: #e0e0e0;
+}
