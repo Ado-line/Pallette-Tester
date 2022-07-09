@@ -43,7 +43,6 @@ body {
 }
 
 .column div div {
-    background-color: #0c0c0c;
     margin: 5%;
     height: 15vh;
     border-radius: 1vw;
@@ -56,10 +55,12 @@ body {
 
 .column div div:hover {
     border-color: rgba(255,255,255,0.5);
+    cursor: url("img/clipboard-copy.png"), auto;
 }
 
 .column div div:active {
     border-color: rgba(255,255,255,0.9);
+    cursor: url("img/clipboard-check.png"), auto;
 }
 
 .column div p {
