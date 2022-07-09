@@ -1,3 +1,11 @@
+:root {
+    --text_color_left: #e0e0e0;
+    --text_color_right: #333333;
+    --column_color_left: #333333;
+    --column_color_right: #e0e0e0;
+    font-family: 'Open Sans', sans-serif;
+}
+
 body {
     background-color: #0c0c0c;
 }
@@ -7,6 +15,7 @@ body {
     height: 5%;
     width: 100vw;
     background-color: #777777;
+    text-align: center;
     /* BELOW: Item positions */
     display: grid;
     grid-auto-flow: column;
@@ -34,22 +43,37 @@ body {
 }
 
 .column div div {
+    background-color: #0c0c0c;
     margin: 5%;
     height: 15vh;
-    background-color: crimson;
     border-radius: 1vw;
     text-align: center;
+    transition-duration: 0.1s;
+    border-style: solid;
+    border-color: rgba(255,255,255,0);
+    border-width: 1%;
+}
+
+.column div div:hover {
+    border-color: rgba(255,255,255,0.5);
+}
+
+.column div div:active {
+    border-color: rgba(255,255,255,0.9);
 }
 
 .column div p {
-    
+    font-size: 14pt;
+    margin: 0;
+    margin-bottom: -3%;
 }
 
 #left-column {
-    background-color: #333333;
-
+    background-color: var(--column_color_left);
+    color: var(--text_color_left);
 }
 
 #right-column {
-    background-color: #e0e0e0;
+    background-color: var(--column_color_right);
+    color: var(--text_color_right);
 }
