@@ -78,3 +78,13 @@ body {
     background-color: var(--column_color_right);
     color: var(--text_color_right);
 }
+
+#pallette-menu {
+    margin-left: -20vw;
+    position: fixed;
+    background-color: rgb(36, 36, 36);
+    box-shadow:0.5vw 0px 2vh 10px rgba(0, 0, 0, 0.3);
+    width: 20vw;
+    height: 100vh;
+    transition-duration: 0.1s;
+}
