@@ -3,18 +3,21 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&display=swap');
         </style> 
-    <script type="text/javascript" src="debug.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pallette-menu.css">
 </head>
 <html>
     <body>
         <div id="nav-bar">
-            <div>Open Pallette</div>
+            <div onclick="menu_toggle('open')"><p>Open Pallette Menu</p></div>
             <a href="http://example.com/" target="_blank">Test1</a>
             <a href="http://example.com/" target="_blank">Test2</a>
             <a href="http://example.com/" target="_blank">Test3</a>
         </div>
         <div id="pallette-menu">
+            <div onclick="menu_toggle('close')" id="menu-header"><p>Close Pallette Menu</p></div>
+            <div class="color-selector-unset"></div>
+            <div class="color-selector-unset"></div>
         </div>
         <div id="main-content">
             <div class="column" id="left-column">
@@ -32,5 +35,7 @@
         </div>
         <div id="footer">
         </div>
+        <script src="js/anim.js"></script>
+        <script src="js/pallette_menu.js"></script>
     </body>
 </html>

@@ -1,0 +1,47 @@
+#pallette-menu {
+    margin-left: -20vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(17, 17, 17);
+    box-shadow:0.5vw 0px 2vh 10px rgba(0, 0, 0, 0.3);
+    width: 20vw;
+    height: 100vh;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    color: white;
+}
+
+#pallette-menu div {
+    padding: 5%;
+}
+
+#menu-header {
+    margin: 2%;
+    border-radius: 2vh;
+    background-color: #777777;
+    font-size: 20pt;
+    text-align: center;
+    height: 4vh;
+}
+
+#menu-header p {
+    margin: auto;
+}
+
+#menu-header:hover {
+    background-color: #4d4d4d;
+    cursor: pointer;
+}
+
+.color-selector {
+    background-color: #4d4d4d;
+    height: 10vh;
+    margin: 3%;
+}
+
+.color-selector-unset {
+    background-color: #4d4d4d;
+    height: 3vh;
+    margin: 3%;
+}
