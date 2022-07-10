@@ -14,10 +14,12 @@
             <a href="http://example.com/" target="_blank">Test2</a>
             <a href="http://example.com/" target="_blank">Test3</a>
         </div>
-        <div id="pallette-menu">
+        <div id="pallette-menu-container">
             <div onclick="menu_toggle('close')" id="menu-header"><p>Close Pallette Menu</p></div>
-            <div class="color-selector-unset"></div>
-            <div class="color-selector-unset"></div>
+            <div id="pallette-menu">
+                <div class="color-selector"><div class="preview-menu grid-item"></div><input type="text" class="color-menu-name grid-item"></input><p class="color-menu-hex grid-item">#FFFFFF</p><p class="rp grid-item">R:</p><input class="rti grid-item" type="number" min="0" max="255"></input><input class="rsi grid-item" type="range" min="0" max="255"><p class="gp grid-item">G:</p><input class="gti grid-item" type="number" min="0" max="255"></input><input class="gsi grid-item" type="range" min="0" max="255"><p class="bp grid-item">B:</p><input class="bti grid-item" type="number" min="0" max="255"></input><input class="bsi grid-item" type="range" min="0" max="255"><div class="menu-color-delete grid-item"></div></div>
+                <div onclick="create_color(event)" class="color-selector-unset"><p>Add a Color +</p></div>
+            </div>
         </div>
         <div id="main-content">
             <div class="column" id="left-column">
@@ -36,6 +38,6 @@
         <div id="footer">
         </div>
         <script src="js/anim.js"></script>
-        <script src="js/pallette_menu.js"></script>
+        <script src="js/pallette_constructor.js"></script>
     </body>
 </html>
