@@ -1,4 +1,4 @@
-var menu_div = document.getElementById("pallette-menu");
+var menu_div = document.getElementById("pallette-menu-container");
 
 function menu_toggle(direction) {
     switch (direction) {

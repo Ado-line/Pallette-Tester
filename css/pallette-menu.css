@@ -1,4 +1,4 @@
-#pallette-menu {
+#pallette-menu-container {
     margin-left: -20vw;
     position: fixed;
     top: 0;
@@ -10,6 +10,11 @@
     transition-duration: 0.2s;
     transition-timing-function: ease-out;
     color: white;
+    overflow-y: scroll;
+}
+
+#pallette-menu-container div {
+    padding: 5%;
 }
 
 #pallette-menu div {
@@ -17,6 +22,9 @@
 }
 
 #menu-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2%;
     margin: 2%;
     border-radius: 2vh;
     background-color: #777777;
@@ -34,14 +42,65 @@
     cursor: pointer;
 }
 
+.preview-menu { grid-area: preview; background-color: pink;}
+.color-menu-name { grid-area: name; }
+.color-menu-hex { grid-area: hex; }
+.rp { grid-area: rp; }
+.rti { grid-area: rti; }
+.rsi { grid-area: rsi; }
+.gp { grid-area: gp; }
+.gti { grid-area: gti; }
+.gsi { grid-area: gsi; }
+.bp { grid-area: bp; }
+.bti { grid-area: bti; }
+.bsi { grid-area: bsi; }
+.menu-color-delete {grid-area: delete; background-color: pink;}
+.grid-item {
+    padding: 1%;
+    text-align: center;
+}
+
 .color-selector {
     background-color: #4d4d4d;
-    height: 10vh;
+    height: 20vh;
     margin: 3%;
+    display: grid;
+    grid-auto-rows: 16.6%;
+    grid-template-columns: 14% 14% 7% 16% 16% 16% 16%;
+    grid-gap: 1%;
+    grid-template-areas:
+    'preview preview name name name name name'
+    'preview preview hex hex hex hex hex'
+    'preview preview rp rti rsi rsi rsi'
+    'preview preview gp gti gsi gsi gsi'
+    'preview preview bp bti bsi bsi bsi'
+    'delete empty empty empty empty empty empty';
+}
+
+.color-selector p {
+    margin: auto;
 }
 
 .color-selector-unset {
-    background-color: #4d4d4d;
+    border-radius: 2vh;
+    background-color: rgba(54, 54, 54, 0.3);
     height: 3vh;
     margin: 3%;
+    text-align: center;
+    font-size: 14pt;
+}
+
+.color-selector-unset p {
+    margin: auto;
+    pointer-events: none;
+}
+
+.color-selector-unset:hover {
+    background-color: #4d4d4d;
+    cursor: pointer;
+}
+
+.color-selector-unset:active {
+    background-color: #616161;
+    cursor: pointer;
 }
